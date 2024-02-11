@@ -182,7 +182,7 @@ nav {
 .main-content {
     padding: 20px;
     text-align: center;
-    height: 95vh;
+    /* height: 95vh; */
     max-width: 100%;
     margin: 0 auto;
     background-size: cover;
@@ -227,6 +227,10 @@ nav {
 
 
 /* second section */
+.second-section{
+    padding-top: 10rem;
+
+}
 .small-image-height .heading-img img {
     height: 50vh !important;
 }
@@ -277,6 +281,7 @@ nav {
 
 
 /* Third section */
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -408,7 +413,7 @@ nav {
 
 /* Fourth section */
 .fourth-section {
-    height: 80vh;
+    /* height: 80vh; */
 }
 
 .fourth-section div {
@@ -452,6 +457,9 @@ nav {
 }
 
 /* Fifth section */
+.fifth-section{
+    padding-top: 8rem;
+}
 #video-container {
     width: 100%;
     height: 80vh;
@@ -539,7 +547,7 @@ nav {
 }
 
 .sixth-section {
-    padding-top: 4rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
 }
 
@@ -566,10 +574,12 @@ nav {
 }
 /* Seventh ssection  */
 .seventh-section {
-    height: 80vh;
+    /* height: 80vh; */
     width: 100%;
     background-size: cover;
     position: relative;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
 }
 
 /* .back-img-sec {
@@ -692,7 +702,9 @@ form textarea {
 .contact-row {
     padding-left: 4rem;
 }
-
+#saveContact{
+ width: 60%;   
+}
 /* Footer section */
 footer h5 {
     font-size: 1rem;
@@ -736,8 +748,26 @@ footer li a:hover {
     .heading-content{
         padding: 0;
     }
+    .second-section{
+        padding-top: 0rem;
+    }
+    .sixth-section{
+        padding-top: 3rem;
+    }
+    .fifth-section{
+        padding-top: 0;
+    }
     .seventh-section {
         height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .col-md-8 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .fourth-section .text-div{
+        padding-top: 2rem;
     }
     .fourth-section {
         height: auto;
@@ -791,12 +821,12 @@ footer li a:hover {
     .big-txt{
         font-size: 2rem;
     }
-    .col-md-8{
-        padding-left: 5px;
-        padding-right: 5px;
+    .expertise-div {
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .contact-row{
-        padding-top: 3rem;
+        padding-top: 4rem;
         padding-bottom: 2rem;
     }
     .p-5{
@@ -807,5 +837,11 @@ footer li a:hover {
     }
     .p-desc{
         line-height: 1.8rem
+    }
+    #saveContact{
+        width: 90%;   
+    }
+    .cont-head {
+        padding-bottom: 2rem;
     }
 }

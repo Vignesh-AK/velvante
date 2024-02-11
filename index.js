@@ -39,7 +39,7 @@ $(document).ready(function () {
       paddingValue = maxPadding * progress;
     } else if (scrollPosition >= end) {
       rotationAngle = maxRotation;
-      paddingValue = maxPadding * progress;
+      paddingValue = maxPadding;
     }
 
     document.querySelector(elementSelector).style.transform = `rotate(${rotationAngle}deg)`;
@@ -73,3 +73,20 @@ function scrollToNavbar() {
     const navbar = document.getElementById('navbar');
     navbar.scrollIntoView({ behavior: 'smooth' });
   }
+
+document.getElementById('saveContact').addEventListener('click', function() {
+      var vCardData = 'BEGIN:VCARD\nVERSION:3.0\nFN:Alex\nORG:Velvante\nTEL:+917561071623\nEMAIL:info@velvante.com\nEND:VCARD';
+      var vCardBlob = new Blob([vCardData], { type: 'text/vcard' });
+      var vCardUrl = URL.createObjectURL(vCardBlob);
+
+      // Create a link element and simulate a click to trigger the download
+      var link = document.createElement('a');
+      link.href = vCardUrl;
+      link.download = 'contact.vcf';
+      document.body.appendChild(link);
+      link.click();
+
+      // Cleanup
+      document.body.removeChild(link);
+      URL.revokeObjectURL(vCardUrl);
+});
