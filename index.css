@@ -22,7 +22,7 @@ body {
     margin-left: auto;
     /* 1 */
 
-    max-width: 1350px;
+    max-width: 95%;
     /* 2 */
 
     padding-right: 10px;
@@ -120,16 +120,13 @@ h2{
     line-height: 2rem;
 }
 
-/* Navbar styling */
-.navbar-background {
-    background-color: #f5f5f5;
-}
+
 
 nav {
     position: fixed;
     width: 100%;
     z-index: 1000;
-    max-width: 1350px;
+    max-width: 95%;
     margin: 0 auto;
     padding-top: 30px !important;
     padding-bottom: 25px !important;
@@ -666,6 +663,7 @@ form textarea {
 
 .cont-head {
     padding-bottom: 4rem;
+    
 }
 
 .contact-ic {
@@ -845,3 +843,56 @@ footer li a:hover {
         padding-bottom: 2rem;
     }
 }
+
+
+
+
+/* # about */
+.gal-first-section{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+.gal-first-section p{
+    font-size: 12px;
+    line-height: 25px;
+    color: #888;
+    margin-bottom: 0;
+}
+.gal-first-section .border-line{
+    border-right: 1px solid #c63938 ;
+
+}
+.wrapper-small{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gal-first-section .col-md-6{
+    padding-left: 4rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.gal-first-section .border-line{
+    padding-left: 0;
+    text-align: end;
+    padding-right: 4rem;
+}
+
+.content-sec{
+    align-items: center;
+    display: flex;
+}
+.cont-txt{
+    width: 80%;
+}
+.cont-txt p {
+    font-size: 13px;
+    line-height: 25px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+
