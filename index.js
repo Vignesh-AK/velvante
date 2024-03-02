@@ -6,12 +6,12 @@ $(document).ready(function () {
   var scrollImage = $("#scrollImage");
   var scrollTrigger = 200;
 
-  $(window).scroll(function () {
-    var scroll = $(this).scrollTop();
-    var newHeight = 75 - (scroll / scrollTrigger) * 60;
-    newHeight = Math.max(newHeight, 65);
-    scrollImage.css('height', newHeight + 'vh');
-  });
+  // $(window).scroll(function () {
+  //   var scroll = $(this).scrollTop();
+  //   var newHeight = 100 - (scroll / scrollTrigger) * 100;
+  //   newHeight = Math.max(newHeight, 100);
+  //   scrollImage.css('height', newHeight + 'vh');
+  // });
 
   // Script 2 - Handle Scroll Events
   function handleScroll() {
