@@ -12,7 +12,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #f5f5f5;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
 }
 
@@ -221,7 +221,9 @@ nav {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
-
+.heading-main-test{
+    font-size: 3rem;
+}
 
 /* second section */
 .second-section{
@@ -356,9 +358,11 @@ nav {
 
 .flow-icons {
     background-image: url(icons.svg);
-    width: 55px;
+    width: 75px;
     display: block;
-    height: 55px;
+    height: 75px;
+    background-position-x: -7px;
+    background-size: 220%;
 }
 
 .grid-item img {
@@ -373,31 +377,31 @@ nav {
 }
 
 .steps-desc {
-    font-size: 10px !important;
+    font-size: 0.8rem !important;
 }
 
 #icons-01 {
-    background-position-y: -1px;
+    background-position-y: -6px;
 }
 
 #icons-02 {
-    background-position-y: 230px;
+    background-position-y: 371px;
 }
 
 #icons-03 {
-    background-position-y: 292px;
+    background-position-y: 588px;
 }
 
 #icons-04 {
-    background-position-y: 362px;
+    background-position-y: 474px;
 }
 
 #icons-05 {
-    background-position-y: 433px;
+    background-position-y: 700px;
 }
 
 #icons-06 {
-    background-position-y: 165px;
+    background-position-y: 256px;
 }
 
 #icons-07 {
@@ -412,7 +416,10 @@ nav {
 .fourth-section {
     /* height: 80vh; */
 }
-
+.passion-desc-sec{
+    display: flex;
+    align-items: center;
+}
 .fourth-section div {
     position: relative;
 }
@@ -769,10 +776,10 @@ footer li a:hover {
     .fourth-section {
         height: auto;
     }
-    .col-lg-4{
+    .col-lg-5{
         padding-top: 2rem;
     }
-    .col-lg-8{
+    .col-lg-7{
         padding-top: 3rem;
     }
     #sofa-img-2 img{
@@ -840,6 +847,10 @@ footer li a:hover {
     }
     .cont-head {
         padding-bottom: 2rem;
+    }
+    .bg-img-joy{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 

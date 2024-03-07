@@ -28,6 +28,10 @@
             width: 100%;
         }
 
+        h2 {
+            font-weight: 500;
+        }
+
         .nav-item a {
             color: #fff !important;
         }
@@ -41,24 +45,13 @@
         }
 
         .logo-conc-img img {
-            width: 80%;
+            width: 100%;
         }
 
-        .conc-head {
-            background-color: #c638382d;
-            padding: 80px 60px 100px 50px;
-            clip-path: polygon(100% 70%, 100% 0%, 0% 0%, 0% 100%);
-            float: left;
 
-        }
 
-        .conc-head h4 {
-            font-size: 3rem;
-        }
 
-        .conc-head h1 {
-            font-size: 5rem;
-        }
+
 
         .logo-desc h4 {
             font-size: 3rem;
@@ -212,25 +205,30 @@
             font-size: 4rem;
             padding-top: 1rem;
         }
+
         #testimonialCarousel {
             position: relative;
         }
 
-        .carousel-control-prev, .carousel-control-next {
-            width: 6%; /* Adjust the width as needed */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 6%;
+            /* Adjust the width as needed */
             position: absolute;
             top: 100%;
             left: 50% !important;
-            font-size: 24px; /* Adjust the font size as needed */
-            color: #000; /* Arrow color */
+            font-size: 24px;
+            /* Adjust the font size as needed */
+            color: #000;
+            /* Arrow color */
             transform: translate(-50%, -50%);
         }
 
         .carousel-control-prev {
             left: 0;
             text-align: left;
-            padding-right:4rem ;
-            
+            padding-right: 4rem;
+
         }
 
         .carousel-control-next {
@@ -238,17 +236,123 @@
             text-align: right;
             padding-left: 4rem;
         }
-        .carousel-inner{
+
+        .carousel-inner {
             padding-bottom: 2rem;
         }
+
         /* Add your custom styles here if needed */
         .testimonial-cont {
             text-align: center;
             padding: 20px;
         }
-        .partners-section{
+
+        .partners-section {
             padding-bottom: 3rem;
         }
+
+        .red-heading {
+            text-align: center;
+            padding-bottom: 2rem;
+            text-transform: uppercase;
+            color: #c63938;
+        }
+
+        .cont-txt p {
+            width: 70%;
+
+        }
+
+        p {
+            font-size: 13px;
+            line-height: 25px;
+            color: #888;
+            margin-bottom: 0;
+        }
+
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .logo-desc h4 {
+                font-size: 1rem;
+                padding-top: 0.5rem;
+            }
+
+            .cont-txt {
+                width: 100%;
+            }
+
+            .cont-txt p {
+                width: 100%;
+            }
+
+            .logo-wireframe {
+                padding-top: 3rem;
+            }
+
+            .testimonial-cont h2 {
+                font-size: 10rem;
+            }
+
+        }
+
+        .mission-icn {
+            background-image: url(mission-icn.svg);
+            width: 300px;
+            height: 300px;
+            background-size: 100%;
+        }
+        #vision-icn{
+            background-position-y:300px ;
+        }
+        .mis-icn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .mission-bg{
+            background: url(mission2.jpg);
+            background-size: contain;       
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            padding-left: 30px;
+            justify-content: left;
+            align-items: center;
+            position: relative;
+}
+        .vision-bg{
+            background: url(vision.jpg);
+            background-size: contain;     
+            height: 75vh;
+            display: flex;
+            justify-content: end;
+            padding-right: 30px;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+}
+.mission-vision .col-md-6{
+    padding: 0;
+}
+   .vision-content{
+    background-color:#ffffffb7;
+    width: 450px; 
+    padding: 50px;
+    border-radius: 10px;
+   }
+   .vision-content p{
+    color: #444;
+   }
+   h3{
+    font-weight: 100;
+    font-size: 2.5rem;
+   }
     </style>
 </head>
 
@@ -270,7 +374,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -306,7 +410,7 @@
     <div class="about-first-section">
         <div class="wrapper">
             <div class="row">
-                <div class="col-lg-6 content-sec">
+                <div class="col-md-6 content-sec">
                     <div class="cont-txt">
                         <h1>About Us</h1>
                         <p>Velvante offers a comprehensive interior design and turnkey renovation solution. Our
@@ -315,7 +419,7 @@
                             your unique vision.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="wrapper">
                         <a href="/87160.jpg">
                             <div class="logo-wireframe">
@@ -335,12 +439,81 @@
         </div>
 
     </div>
+    <!-- <div class="mission-vision">
+        <div class="">
+            <div class="">
+                <div class="row" style="padding-top: 6rem;">
+                    <div class="col-md-6"
+                        style="text-align: end; background-color: #d1cbcb2d; color: #000;display: flex;">
+                        <div class="mis-icn">
+                            <div class="mission-icn"></div>
 
+                        </div>
+                        <div style="padding-top: 4rem; padding-bottom: 3rem;padding-right: 1rem;">
+                            <h2>Our Mission</h2>
+                            <div style="display: flex; justify-content: end;">
+                                <p style="width: 60%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Quisquam ipsam repudiandae aut inventore quo omnis possimus placeat molestiae
+                                    provident dolor eum iste, quae esse, rem et cum soluta voluptates! Doloremque.</p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6" style="background-color: #c638382d; color: #ab6f6ffc; display: flex;">
+
+                        <div style="padding-top: 4rem; padding-bottom: 3rem;padding-left: 1rem;">
+
+                            <h2>Our Vision</h2>
+                            <div>
+                                <p style="width: 60%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Aperiam, recusandae! Natus modi debitis cum, rerum asperiores iure laudantium vitae
+                                    dolore hic laboriosam, inventore facere consectetur. Doloremque vitae illum facilis
+                                    voluptate!</p>
+
+                            </div>
+                        </div>
+                        <div class="mis-icn">
+                            <div class="mission-icn" id="vision-icn"></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+    <div class="mission-vision">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="vision-bg">
+                    <div class="vision-content">
+                        <h3>Vision</h3>
+                       <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, expedita odit. Sapiente quae voluptates, iste enim itaque amet molestias consequatur, aliquid dolore eius incidunt commodi voluptatibus. Earum corrupti minima qui?
+                       </p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mission-bg">
+                    <div class="vision-content">
+                        <h3>Mission</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ad similique! Hic nisi ipsum, possimus quas, at aut quaerat blanditiis aliquid ratione, voluptatem commodi reprehenderit nihil dolorum corrupti magni numquam.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <div class="partners-section">
         <div class="partner-head">
-            <h2>Our Partners</h2>
+            <h2 class="red-heading">Our Partners</h2>
         </div>
         <div class="row partners-logos">
             <div class="col">
@@ -461,7 +634,7 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
-               <img src="keyboard_arrow_left_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                <img src="keyboard_arrow_left_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </a>
             <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
                 <img src="keyboard_arrow_right_FILL0_wght400_GRAD0_opsz24.svg" alt="">
@@ -471,8 +644,7 @@
     <div class="about-fourth-section">
         <div class="conc-head">
             <div>
-                <h4>3 Pillars of </h4>
-                <h1>Velvante</h1>
+                <h2 class="pd-1 red-heading">Logo Concept</h4>
             </div>
 
         </div>
@@ -607,14 +779,14 @@
                             <h5>Contact</h5>
                             <ul class="list-unstyled">
                                 <li>
-                                    <p>2972 WESTHEIMER RD. SANTA ANA, ILLINOIS 85486</p>
+                                    <p>SRI NANIUNDESWARA PLAZA KODATHI VILLAGE CARMALARAM POST BANGALORE- 560035</p>
 
 
                                 <li>
-                                    <p>(229) 555-0109</p>
+                                    <p>+ 91 90080 32606</p>
                                 </li>
                                 <li>
-                                    <p>CONTACT@EXAMPLE.COM</p>
+                                    <p>contact@velvante.com</p>
                                 </li>
                                 <!-- Add more links as needed -->
                             </ul>
