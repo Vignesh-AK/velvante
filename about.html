@@ -28,9 +28,7 @@
             width: 100%;
         }
 
-        h2 {
-            font-weight: 500;
-        }
+
 
         .nav-item a {
             color: #fff !important;
@@ -38,6 +36,7 @@
 
         .about-fourth-section {
             padding-top: 6rem;
+            padding-bottom: 2rem;
         }
 
         .logo-conc-img {
@@ -186,6 +185,7 @@
 
         .testimonial-section {
             padding-top: 6rem;
+            padding-bottom: 2rem;
         }
 
         .testimonial-cont p {
@@ -270,9 +270,23 @@
             margin-bottom: 0;
         }
 
-        .row {
+        .mission-row {
             margin-left: 0;
             margin-right: 0;
+        }
+
+        .about-row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .partners-logos {
+            margin-left: 0;
+            margin-left: 0;
+        }
+
+        .logo-conc-img {
+            padding-top: 2rem;
         }
 
         @media only screen and (max-width: 992px) {
@@ -305,17 +319,20 @@
             height: 300px;
             background-size: 100%;
         }
-        #vision-icn{
-            background-position-y:300px ;
+
+        #vision-icn {
+            background-position-y: 300px;
         }
-        .mis-icn{
+
+        .mis-icn {
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .mission-bg{
+
+        .mission-bg {
             background: url(mission2.jpg);
-            background-size: contain;       
+            background-size: contain;
             height: 75vh;
             background-size: cover;
             background-position: center;
@@ -324,10 +341,11 @@
             justify-content: left;
             align-items: center;
             position: relative;
-}
-        .vision-bg{
+        }
+
+        .vision-bg {
             background: url(vision.jpg);
-            background-size: contain;     
+            background-size: contain;
             height: 75vh;
             display: flex;
             justify-content: end;
@@ -336,23 +354,31 @@
             background-size: cover;
             background-position: center;
             position: relative;
-}
-.mission-vision .col-md-6{
-    padding: 0;
-}
-   .vision-content{
-    background-color:#ffffffb7;
-    width: 450px; 
-    padding: 50px;
-    border-radius: 10px;
-   }
-   .vision-content p{
-    color: #444;
-   }
-   h3{
-    font-weight: 100;
-    font-size: 2.5rem;
-   }
+        }
+
+        .mission-vision .col-md-6 {
+            padding: 0;
+        }
+
+        .vision-content {
+            background-color: #ffffffb7;
+            width: 450px;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        .vision-content p {
+            color: #444;
+        }
+
+        h3 {
+            font-weight: 100;
+            font-size: 2.5rem;
+        }
+
+        .heading-title {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -409,10 +435,10 @@
     </div>
     <div class="about-first-section">
         <div class="wrapper">
-            <div class="row">
+            <div class="row about-row">
                 <div class="col-md-6 content-sec">
                     <div class="cont-txt">
-                        <h1>About Us</h1>
+                        <h2>About <span class="big-txt">Us</span></h2>
                         <p>Velvante offers a comprehensive interior design and turnkey renovation solution. Our
                             commitment spans every stage of your project, from the initial design concept to the final
                             completion, ensuring the creation of harmonious and functional interiors that resonate with
@@ -484,14 +510,16 @@
         </div>
     </div> -->
     <div class="mission-vision">
-        <div class="row">
+        <div class="row mission-row">
             <div class="col-md-6">
                 <div class="vision-bg">
                     <div class="vision-content">
                         <h3>Vision</h3>
-                       <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, expedita odit. Sapiente quae voluptates, iste enim itaque amet molestias consequatur, aliquid dolore eius incidunt commodi voluptatibus. Earum corrupti minima qui?
-                       </p> 
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, expedita odit. Sapiente
+                            quae voluptates, iste enim itaque amet molestias consequatur, aliquid dolore eius incidunt
+                            commodi voluptatibus. Earum corrupti minima qui?
+                        </p>
                     </div>
                 </div>
             </div>
@@ -501,7 +529,9 @@
                         <h3>Mission</h3>
 
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ad similique! Hic nisi ipsum, possimus quas, at aut quaerat blanditiis aliquid ratione, voluptatem commodi reprehenderit nihil dolorum corrupti magni numquam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, ad similique! Hic nisi
+                            ipsum, possimus quas, at aut quaerat blanditiis aliquid ratione, voluptatem commodi
+                            reprehenderit nihil dolorum corrupti magni numquam.
 
                         </p>
                     </div>
@@ -513,7 +543,7 @@
 
     <div class="partners-section">
         <div class="partner-head">
-            <h2 class="red-heading">Our Partners</h2>
+            <h2>Our <span class="big-txt">Partners</span></h2>
         </div>
         <div class="row partners-logos">
             <div class="col">
@@ -643,8 +673,8 @@
     </div>
     <div class="about-fourth-section">
         <div class="conc-head">
-            <div>
-                <h2 class="pd-1 red-heading">Logo Concept</h4>
+            <div class="heading-title">
+                <h2>Logo <span class="big-txt">Concepts</span></h2>
             </div>
 
         </div>
@@ -657,18 +687,18 @@
 
 
     </div>
-    <div class="seventh-section">
+    <div class="seventh-section" id="contact">
         <div class="back-img-sec">
 
 
             <div class="wrapper">
                 <div class="contact-us">
                     <div class="cont-head">
-                        <h1>Contact Us</h1>
+                        <h2>Reach <span class="big-txt">Us</span></h2>
                         <p class="caution">Your email address will not be published. Required fields are marked *</p>
                     </div>
 
-                    <div class="row">
+                    <div class="row contact-det-row">
                         <div class="col-lg-6">
 
                             <form>
@@ -757,7 +787,7 @@
 
                 <!-- Columns on the right -->
                 <div class="col-12 col-lg-6">
-                    <div class="row">
+                    <div class="row footer-row">
                         <div class="col-lg-4 col-sm-6">
                             <h5>Social</h5>
                             <ul class="list-unstyled">
@@ -796,7 +826,6 @@
             </div>
         </div>
     </footer>
-
 
 </body>
 

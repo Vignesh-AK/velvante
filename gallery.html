@@ -16,6 +16,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+        
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/40eeaef62f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
@@ -61,182 +62,194 @@
         padding-right: 5px;
     }
 
-.row > .column {
-  padding: 0 8px;
-}
+    .row>.column {
+        padding: 0 8px;
+    }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  padding-top: 10px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: auto;
-  background-color: #f5f5f5;
-}
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #f5f5f5;
-  margin: auto;
-  border: 0;
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        padding-top: 10px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: auto;
+        background-color: #f5f5f5;
+    }
 
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
+    /* Modal Content */
+    .modal-content {
+        position: relative;
+        background-color: #f5f5f5;
+        margin: auto;
+        border: 0;
 
-/* The Close Button */
-.close {
-  color: black;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
+        padding: 0;
+        width: 90%;
+        max-width: 1200px;
+    }
 
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
+    /* The Close Button */
+    .close {
+        color: black;
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 35px;
+        font-weight: bold;
+    }
 
-.mySlides {
-  display: none;
-}
+    .close:hover,
+    .close:focus {
+        color: #999;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-.cursor {
-  cursor: pointer;
-}
+    .mySlides {
+        display: none;
+    }
 
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+    .cursor {
+        cursor: pointer;
+    }
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
 
 
-.numbertext {
-  color: #999;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    .numbertext {
+        color: #999;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
 
-img {
-  margin-bottom: -4px;
-}
+    img {
+        margin-bottom: -4px;
+    }
 
-.caption-container {
-  text-align: center;
-  background-color: #f5f5f5;
-  padding: 10px;
-  color: #c63938;
+    .caption-container {
+        text-align: center;
+        background-color: #f5f5f5;
+        padding: 10px;
+        color: #c63938;
 
-}
-#caption{
-    margin-bottom: 0;
-}
+    }
 
-.demo {
-  opacity: 0.6;
-}
+    #caption {
+        margin-bottom: 0;
+    }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+    .demo {
+        opacity: 0.6;
+    }
 
-img.hover-shadow {
-  transition: 0.3s;
-}
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.test-row{
-    display: flex;
-    justify-content: center;
+    img.hover-shadow {
+        transition: 0.3s;
+    }
 
-}
-.modal-content img{
-    max-height: 60vh;
-    object-fit: contain;
-    background-color: #f5f5f5;
-}
-.test-row .column img{
-    height: 200px;
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 
-}
-.column{
-    width: 20%;
-}
-.column img{
-    width: 100%;
-    object-fit: cover;
-    padding: 10px;
-}
-@media only screen and (max-width: 992px){
+    .test-row {
+        display: flex;
+        justify-content: center;
 
-.wrapper-small{
-    width: 100%;
-    text-align: center;
-}
-.gal-first-section{
-    padding-top: 3rem;
-    height: auto;
-}
-.gal-first-section .border-line{
-    border: none;
-}
-.gal-first-section .border-line{
-    padding: 0;
-    text-align: center;
-}
-.gal-first-section .col-lg-6{
-    padding: 0;
-    display: block;
-    justify-content: center;
-    align-items: center;
-}
+    }
 
-.test-row .column img{
-    height: 70px;
-}
-.column img{
-    padding: 2px;
-}
-}
+    .modal-content img {
+        max-height: 60vh;
+        object-fit: contain;
+        background-color: #f5f5f5;
+    }
 
+    .test-row .column img {
+        height: 200px;
+
+    }
+
+    .column {
+        width: 20%;
+    }
+
+    .column img {
+        width: 100%;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        .wrapper-small {
+            width: 100%;
+            text-align: center;
+        }
+
+        .gal-first-section {
+            padding-top: 3rem;
+            height: auto;
+        }
+
+        .gal-first-section .border-line {
+            border: none;
+        }
+
+        .gal-first-section .border-line {
+            padding: 0;
+            text-align: center;
+        }
+
+        .gal-first-section .col-lg-6 {
+            padding: 0;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .test-row .column img {
+            height: 70px;
+        }
+
+        .column img {
+            padding: 2px;
+        }
+    }
 </style>
 
 <body>
@@ -282,7 +295,9 @@ img.hover-shadow {
                         <h4>We design your interiors</h4>
                     </div>
                     <div class="col-lg-6">
-                        <p>Your home is a reflection of your journey, and we're here to ensure that every corner tells a story that is uniquely yours. Let us weave your personality into the fabric of your living space, creating an environment where you feel truly at home.
+                        <p>Your home is a reflection of your journey, and we're here to ensure that every corner tells a
+                            story that is uniquely yours. Let us weave your personality into the fabric of your living
+                            space, creating an environment where you feel truly at home.
 
                         </p>
                     </div>
@@ -298,10 +313,11 @@ img.hover-shadow {
                 <h2 class="pd-1">Kitchen </h2>
                 <div class="kitchen-sec">
                     <div class="row">
-                        <div class="col-lg-4 img-sec"><img
-                                src="kitchen_1.jpg" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                        <div class="col-lg-4 img-sec"><img src="kitchen_1.jpg" alt=""
+                                onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                         </div>
-                        <div class="col-lg-8 img-sec"><img onclick="openModal();currentSlide(1)" src="kitchen_2.jpg" alt=""></div>
+                        <div class="col-lg-8 img-sec"><img onclick="openModal();currentSlide(1)" src="kitchen_2.jpg"
+                                alt=""></div>
                     </div>
                 </div>
 
@@ -311,9 +327,10 @@ img.hover-shadow {
                 <h2 class="pd-1">Living Room </h2>
                 <div class="living-sec">
                     <div class="row">
-                        <div class="col-lg-8 img-sec"><img onclick="openModal();currentSlide(2)" src="living_1.jpg" alt=""></div>
-                        <div class="col-lg-4 img-sec"><img onclick="openModal();currentSlide(2)"
-                                src="living_2.jpg" alt="">
+                        <div class="col-lg-8 img-sec"><img onclick="openModal();currentSlide(2)" src="living_1.jpg"
+                                alt=""></div>
+                        <div class="col-lg-4 img-sec"><img onclick="openModal();currentSlide(2)" src="living_2.jpg"
+                                alt="">
                         </div>
 
                     </div>
@@ -324,10 +341,11 @@ img.hover-shadow {
                 <h2 class="pd-1">Bedroom </h2>
                 <div class="bedroom-sec">
                     <div class="row">
-                        <div class="col-lg-4 img-sec"><img
-                                src="bedroom_1.jpg" alt="" onclick="openModal();currentSlide(3)">
+                        <div class="col-lg-4 img-sec"><img src="bedroom_1.jpg" alt=""
+                                onclick="openModal();currentSlide(3)">
                         </div>
-                        <div class="col-lg-8 img-sec"><img src="bedroom_2.jpg" alt="" onclick="openModal();currentSlide(3)"></div>
+                        <div class="col-lg-8 img-sec"><img src="bedroom_2.jpg" alt=""
+                                onclick="openModal();currentSlide(3)"></div>
                     </div>
                 </div>
 
@@ -336,9 +354,10 @@ img.hover-shadow {
                 <h2 class="pd-1">Bathroom </h2>
                 <div class="bathroom-sec">
                     <div class="row">
-                        <div class="col-lg-8 img-sec"><img src="bathroom_1.jpg" alt="" onclick="openModal();currentSlide(4)"></div>
-                        <div class="col-lg-4 img-sec"><img
-                                src="bathroom_2.jpg" alt="" onclick="openModal();currentSlide(1)">
+                        <div class="col-lg-8 img-sec"><img src="bathroom_1.jpg" alt=""
+                                onclick="openModal();currentSlide(4)"></div>
+                        <div class="col-lg-4 img-sec"><img src="bathroom_2.jpg" alt=""
+                                onclick="openModal();currentSlide(1)">
                         </div>
 
                     </div>
@@ -349,10 +368,11 @@ img.hover-shadow {
                 <h2 class="pd-1">Wardrobe </h2>
                 <div class="wardrobe-sec">
                     <div class="row">
-                        <div class="col-lg-4 img-sec"><img
-                                src="wardrobe_1.jpg" alt="" onclick="openModal();currentSlide(1)">
+                        <div class="col-lg-4 img-sec"><img src="wardrobe_1.jpg" alt=""
+                                onclick="openModal();currentSlide(1)">
                         </div>
-                        <div class="col-lg-8 img-sec"><img src="wardrobe_2.jpg" alt="" onclick="openModal();currentSlide(1)"></div>
+                        <div class="col-lg-8 img-sec"><img src="wardrobe_2.jpg" alt=""
+                                onclick="openModal();currentSlide(1)"></div>
                     </div>
                 </div>
 
@@ -365,26 +385,26 @@ img.hover-shadow {
 
                 <div class="mySlides">
                     <div class="numbertext">1 / 4</div>
-                   <img class="" src="3d-room-interior-design-with-geometric-shapes-generative-ai_191095-459.jpg" style="width:100%" onclick="currentSlide(1)"
-                        alt="Nature and sunrise">
+                    <img class="" src="3d-room-interior-design-with-geometric-shapes-generative-ai_191095-459.jpg"
+                        style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">2 / 4</div>
-                    <img class="" src="home-interior-design-composition_23-2148986633.jpg" style="width:100%" onclick="currentSlide(2)"
-                        alt="Snow">
+                    <img class="" src="home-interior-design-composition_23-2148986633.jpg" style="width:100%"
+                        onclick="currentSlide(2)" alt="Snow">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">3 / 4</div>
-                    <img class="" src="frame-mockup-luxury-dining-room-cream-color-background_41470-5110.jpg" style="width:100%" onclick="currentSlide(3)"
-                        alt="Mountains and fjords">
+                    <img class="" src="frame-mockup-luxury-dining-room-cream-color-background_41470-5110.jpg"
+                        style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                 </div>
 
                 <div class="mySlides">
                     <div class="numbertext">4 / 4</div>
-                    <img class="" src="home-interior-design-composition_23-2148986633.jpg" style="width:100%" onclick="currentSlide(4)"
-                        alt="Northern Lights">
+                    <img class="" src="home-interior-design-composition_23-2148986633.jpg" style="width:100%"
+                        onclick="currentSlide(4)" alt="Northern Lights">
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -396,23 +416,25 @@ img.hover-shadow {
 
                 <div class="test-row">
                     <div class="column">
-                        <img class="demo cursor" src="3d-room-interior-design-with-geometric-shapes-generative-ai_191095-459.jpg" style="width:100%" onclick="currentSlide(1)"
-                            alt="Nature and sunrise">
+                        <img class="demo cursor"
+                            src="3d-room-interior-design-with-geometric-shapes-generative-ai_191095-459.jpg"
+                            style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="home-interior-design-composition_23-2148986633.jpg" style="width:100%" onclick="currentSlide(2)"
-                            alt="Snow">
+                        <img class="demo cursor" src="home-interior-design-composition_23-2148986633.jpg"
+                            style="width:100%" onclick="currentSlide(2)" alt="Snow">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="frame-mockup-luxury-dining-room-cream-color-background_41470-5110.jpg" style="width:100%" onclick="currentSlide(3)"
-                            alt="Mountains and fjords">
+                        <img class="demo cursor"
+                            src="frame-mockup-luxury-dining-room-cream-color-background_41470-5110.jpg"
+                            style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="home-interior-design-composition_23-2148986633.jpg" style="width:100%" onclick="currentSlide(4)"
-                            alt="Northern Lights">
+                        <img class="demo cursor" src="home-interior-design-composition_23-2148986633.jpg"
+                            style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -425,7 +447,7 @@ img.hover-shadow {
             <div class="wrapper">
                 <div class="contact-us">
                     <div class="cont-head">
-                        <h1>Contact Us</h1>
+                        <h2>Reach <span class="big-txt">Us</span></h2>
                         <p class="caution">Your email address will not be published. Required fields are marked *</p>
                     </div>
 
@@ -466,7 +488,20 @@ img.hover-shadow {
                             </form>
                         </div>
                         <div class="col-lg-6 address-sec">
+                            <!-- <div class="contact-ic">
+                                <img src="icons8-call-50.png" alt="">
+                                <p>Call us: (229) 555-0109</p>
+                            </div>
+                            <div class="contact-ic">
+                                <img src="icons8-email-50.png" alt="">
+                                <p>Email Us: contact@example.com</p>
 
+                            </div>
+                            <div class="contact-ic">
+                                <img src="office-building (1).png">
+                                <p>Find us: 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+
+                            </div> -->
                             <div class="row contact-row">
                                 <div class="col contact-details">
                                     <h4>Direct contact</h4>
@@ -498,12 +533,14 @@ img.hover-shadow {
     <footer class="bg-white p-5">
         <div class="">
             <div class="row">
+                <!-- Logo on the left -->
                 <div class="col-12 col-lg-6">
                     <img src="velvante.svg" alt="Logo" height="25">
                 </div>
 
+                <!-- Columns on the right -->
                 <div class="col-12 col-lg-6">
-                    <div class="row">
+                    <div class="row footer-row">
                         <div class="col-lg-4 col-sm-6">
                             <h5>Social</h5>
                             <ul class="list-unstyled">
@@ -518,6 +555,7 @@ img.hover-shadow {
                             <ul class="list-unstyled">
                                 <li><a href="#">Contact</a></li>
                                 <li><a href="#">Services</a></li>
+                                <!-- Add more links as needed -->
                             </ul>
                         </div>
                         <div class="col-lg-4 col-sm-12">
@@ -533,6 +571,7 @@ img.hover-shadow {
                                 <li>
                                     <p>contact@velvante.com</p>
                                 </li>
+                                <!-- Add more links as needed -->
                             </ul>
                         </div>
                     </div>
