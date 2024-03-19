@@ -302,8 +302,8 @@ nav {
     background-image: url(fetures_bg.jpg);
     background-position: center;
     background-size: cover;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     background-repeat: no-repeat;
 }
 .grid-container {
