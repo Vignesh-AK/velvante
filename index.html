@@ -24,7 +24,7 @@
 <body>
     <div class="static-button" onclick="scrollToNavbar()"><i class="fa-solid fa-angle-up"></i></div>
 
-    <div id="navbar" class="navbar-content-wrapper">
+    <!-- <div id="navbar" class="navbar-content-wrapper">
         <div class="navbar-background">
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
 
@@ -54,20 +54,7 @@
     </div>
 
     <div class="main-content-test">
-        <!-- <div class="wrapper">
-            <div class="heading-img">
-
-                <div class="heading-content">
-                    <h2 class="heading-main">DESIGN & <br>
-                        CRAFTED <br>
-                        INTERIORS</h2>
-                    <p>Redefining Indian Living</p>
-                </div>
-            </div>
-
-
-
-        </div> -->
+       
         <div class="wrapper">
             <div class="heading-content-test"
                 style="color: white; top: 50%;position: absolute; background-color: rgba(0, 0, 0, 0.209); padding: 10px;">
@@ -78,8 +65,55 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
+    <div id="navbar" class="">
+        <!-- Navbar background -->
+        <div class="navbar-background">
+            <!-- Navbar using Bootstrap -->
+            <nav class="navbar navbar-expand-lg">
 
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="about-second-section">
+        <div class="video-container">
+            <video autoplay muted loop>
+                <source src="production_id_3770054 (1080p).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="white-overlay"></div>
+            <div class="text-overlay">
+                <div class="logo-center">
+                    <img src="velvante.svg" alt="">
+                    <div class="logo-desc">
+                        <h4>Crafting Elegance</h4>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="second-section">
         <div class="wrapper">
             <div class="row">
@@ -572,13 +606,13 @@
                 <div class="contact-us">
                     <div class="cont-head">
                         <h2>Reach <span class="big-txt">Us</span></h2>
-                        <p class="caution">Your email address will not be published. Required fields are marked *</p>
+                        <p class="caution">Your email address will not be published.</p>
                     </div>
 
                     <div class="row">
                         <div class="col-lg-6">
 
-                            <form>
+                            <form id="myForm">
                                 <div class="form-row">
                                     <div class="form-group col-lg-6">
                                         <label for="name">Your Name:</label>
@@ -604,8 +638,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputAddress">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                    <label for="inputAddress">Message</label>
+                                    <textarea type="text" class="form-control" id="inputAddress" placeholder=""></textarea>
                                 </div>
 
                                 <button type="submit" class="secondary-btn">Submit</button>
@@ -629,15 +663,15 @@
                             <div class="row contact-row">
                                 <div class="col contact-details">
                                     <h4>Direct contact</h4>
-                                    <p>2972 WESTHEIMER RD. SANTA ANA, ILLINOIS 85486</p>
-                                    <p>(229) 555-0109</p>
-                                    <p>CONTACT@EXAMPLE.COM</p>
+                                    <p>SRI NANIUNDESWARA PLAZA KODATHI VILLAGE CARMALARAM POST BANGALORE- 560035</p>
+                                    <p>+ 91 90080 32606</p>
+                                    <p>sales@velvante.com</p>
                                     <button id="saveContact" class="secondary-btn">Save Contact</button>
 
                                 </div>
                                 <div class="col contact-details">
                                     <h4>ADMINISTRATIVE HOURS</h4>
-                                    <p>Monday to Friday, 9AM–5PM</p>
+                                    <p>Tuesday to Sunday, 10AM – 6PM</p>
 
                                     <p>Weekend Closed</p>
                                 </div>
@@ -693,7 +727,7 @@
                                     <p>+ 91 90080 32606</p>
                                 </li>
                                 <li>
-                                    <p>contact@velvante.com</p>
+                                    <p>sales@velvante.com</p>
                                 </li>
                                 <!-- Add more links as needed -->
                             </ul>
@@ -703,9 +737,36 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script src="index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        
+        // Collect form data
+        var formData = new FormData(this);
+        
+        // Send form data using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "send_mail.php", true); // Replace with the correct path to your PHP file
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                // Handle success response
+                alert(xhr.responseText); // Alert the response from the server
+            } else {
+                // Handle error response
+                alert("Failed to send email. Please try again later.");
+            }
+        };
+        xhr.onerror = function() {
+            // Handle network error
+            alert("Network error occurred. Please try again later.");
+        };
+        xhr.send(formData); // Send form data
+    });
+    </script>
+    
+    
+    <script src="index.js"></script>
 
 </body>
 

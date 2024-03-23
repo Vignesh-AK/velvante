@@ -1,81 +1,81 @@
-// Ensure jQuery is loaded
+// // Ensure jQuery is loaded
 
-// Consolidated Script
-$(document).ready(function () {
-  // Script 1 - Using jQuery for image height change
-  var scrollImage = $("#scrollImage");
-  var scrollTrigger = 200;
+// // Consolidated Script
+// $(document).ready(function () {
+//   // Script 1 - Using jQuery for image height change
+//   var scrollImage = $("#scrollImage");
+//   var scrollTrigger = 200;
 
-  // $(window).scroll(function () {
-  //   var scroll = $(this).scrollTop();
-  //   var newHeight = 100 - (scroll / scrollTrigger) * 100;
-  //   newHeight = Math.max(newHeight, 100);
-  //   scrollImage.css('height', newHeight + 'vh');
-  // });
+//   // $(window).scroll(function () {
+//   //   var scroll = $(this).scrollTop();
+//   //   var newHeight = 100 - (scroll / scrollTrigger) * 100;
+//   //   newHeight = Math.max(newHeight, 100);
+//   //   scrollImage.css('height', newHeight + 'vh');
+//   // });
 
-  // Script 2 - Handle Scroll Events
-  function handleScroll() {
-    const scrollPosition = window.scrollY;
+//   // Script 2 - Handle Scroll Events
+//   function handleScroll() {
+//     const scrollPosition = window.scrollY;
 
-    // Section 1 - Fourth Section Rotation
-    handleRotation(scrollPosition, 'fourth-section', '#scrollImage4', 1700, 2500, 15);
+//     // Section 1 - Fourth Section Rotation
+//     handleRotation(scrollPosition, 'fourth-section', '#scrollImage4', 1700, 2500, 15);
 
-    // Section 2 - Scroll Image 2 Rotation
-    handleRotation(scrollPosition, 'second-section', '#scrollImage2', 900, 2000, 7, 30);
+//     // Section 2 - Scroll Image 2 Rotation
+//     handleRotation(scrollPosition, 'second-section', '#scrollImage2', 900, 2000, 7, 30);
 
-    // Section 3 - Adjustable Element Bottom Position
-    handleAdjustableElement(scrollPosition, 500, 1300);
-  }
+//     // Section 3 - Adjustable Element Bottom Position
+//     handleAdjustableElement(scrollPosition, 500, 1300);
+//   }
 
-  // Section 1 - Rotation Only
-  function handleRotation(scrollPosition, sectionId, elementSelector, start, end, maxRotation, maxPadding=0) {
-    const scrollTriggerSection = document.getElementById(sectionId);
-    let rotationAngle = 0;
-    let paddingValue = 0;
+//   // Section 1 - Rotation Only
+//   function handleRotation(scrollPosition, sectionId, elementSelector, start, end, maxRotation, maxPadding=0) {
+//     const scrollTriggerSection = document.getElementById(sectionId);
+//     let rotationAngle = 0;
+//     let paddingValue = 0;
 
-    if (scrollPosition > start && scrollPosition < end) {
-      const progress = (scrollPosition - start) / (end - start);
-      rotationAngle = maxRotation * progress;
-      paddingValue = maxPadding * progress;
-    } else if (scrollPosition >= end) {
-      rotationAngle = maxRotation;
-      paddingValue = maxPadding;
-    }
+//     if (scrollPosition > start && scrollPosition < end) {
+//       const progress = (scrollPosition - start) / (end - start);
+//       rotationAngle = maxRotation * progress;
+//       paddingValue = maxPadding * progress;
+//     } else if (scrollPosition >= end) {
+//       rotationAngle = maxRotation;
+//       paddingValue = maxPadding;
+//     }
 
-    document.querySelector(elementSelector).style.transform = `rotate(${rotationAngle}deg)`;
-    document.querySelector('#scrollImage2').style.paddingLeft = `${paddingValue}px`;
+//     document.querySelector(elementSelector).style.transform = `rotate(${rotationAngle}deg)`;
+//     document.querySelector('#scrollImage2').style.paddingLeft = `${paddingValue}px`;
 
-  }
+//   }
 
-  // Section 2 - Adjustable Element Bottom Position
-  function handleAdjustableElement(scrollPosition, startScroll, endScroll) {
-    const adjustableElement = document.getElementById('sofa-img-1');
+//   // Section 2 - Adjustable Element Bottom Position
+//   function handleAdjustableElement(scrollPosition, startScroll, endScroll) {
+//     const adjustableElement = document.getElementById('sofa-img-1');
 
-    if (scrollPosition >= startScroll && scrollPosition <= endScroll) {
-      const adjustedBottom = easeOutQuad(Math.min(1, (scrollPosition - startScroll) / (endScroll - startScroll))) * 80;
-      adjustableElement.style.bottom = `${adjustedBottom}px`;
-    }
-  }
+//     if (scrollPosition >= startScroll && scrollPosition <= endScroll) {
+//       const adjustedBottom = easeOutQuad(Math.min(1, (scrollPosition - startScroll) / (endScroll - startScroll))) * 80;
+//       adjustableElement.style.bottom = `${adjustedBottom}px`;
+//     }
+//   }
 
-  // Easing function (Quadratic Ease Out)
-  function easeOutQuad(t) {
-    return t * (2 - t);
-  }
+//   // Easing function (Quadratic Ease Out)
+//   function easeOutQuad(t) {
+//     return t * (2 - t);
+//   }
 
-  // Attach the scroll event listener
-  window.addEventListener('scroll', handleScroll);
+//   // Attach the scroll event listener
+//   window.addEventListener('scroll', handleScroll);
 
-  // Script 3 - Scroll to Navbar
+//   // Script 3 - Scroll to Navbar
   
-});
+// });
 
-function scrollToNavbar() {
-    const navbar = document.getElementById('navbar');
-    navbar.scrollIntoView({ behavior: 'smooth' });
-  }
+// function scrollToNavbar() {
+//     const navbar = document.getElementById('navbar');
+//     navbar.scrollIntoView({ behavior: 'smooth' });
+//   }
 
 document.getElementById('saveContact').addEventListener('click', function() {
-      var vCardData = 'BEGIN:VCARD\nVERSION:3.0\nFN:Alex\nORG:Velvante\nTEL:+917561071623\nEMAIL:info@velvante.com\nEND:VCARD';
+      var vCardData = 'BEGIN:VCARD\nVERSION:3.0\nFN:Alex\nORG:Velvante\nTEL:+919008032606\nEMAIL:sales@velvante.com\nEND:VCARD';
       var vCardBlob = new Blob([vCardData], { type: 'text/vcard' });
       var vCardUrl = URL.createObjectURL(vCardBlob);
 
