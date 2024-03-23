@@ -6,10 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST["message"];
 
     // Email configuration
-    $to = "recipient@example.com"; // Replace with recipient's email address
+    $to = "vchoo10@gmail.com"; // Replace with recipient's email address
     $subject = "Message from your website";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
-    $headers = "From: sender@example.com"; // Replace with your email address
+    $headers = "From: vigneshayanikodan@gmail.com"; // Replace with your email address
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {
