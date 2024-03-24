@@ -213,7 +213,17 @@
         object-fit: cover;
         padding: 10px;
     }
-
+    .gal-first-section {
+            padding-top: 10rem;
+            height: auto;
+        }
+        .nav-item a{
+            color: black !important;
+        }
+    .navbar-background{
+        background-color: #f5f5f5;
+        z-index: 99;
+    }
     @media only screen and (max-width: 992px) {
 
         .wrapper-small {
@@ -221,10 +231,7 @@
             text-align: center;
         }
 
-        .gal-first-section {
-            padding-top: 3rem;
-            height: auto;
-        }
+        
 
         .gal-first-section .border-line {
             border: none;
@@ -249,6 +256,7 @@
         .column img {
             padding: 2px;
         }
+
     }
 </style>
 
@@ -260,7 +268,7 @@
         <!-- Navbar background -->
         <div class="navbar-background">
             <!-- Navbar using Bootstrap -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <nav class="navbar navbar-expand-lg navbar-light">
 
                 <a class="navbar-brand" href="index.html"><img src="velvante.svg" alt="velvante"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -270,7 +278,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
@@ -287,7 +295,7 @@
         </div>
     </div>
 
-    <div class="gal-first-section">
+    <div class="gal-first-section container">
         <div class="wrapper">
             <div class="wrapper-small">
                 <div class="row">
@@ -307,11 +315,11 @@
         </div>
 
     </div>
-    <div>
+    <div class="container">
         <div class="wrapper">
             <div class="gallery-sec">
                 <h2 class="pd-1">Kitchen </h2>
-                <div class="kitchen-sec">
+                <div class="kitchen-sec container">
                     <div class="row">
                         <div class="col-lg-4 img-sec"><img src="kitchen_1.jpg" alt=""
                                 onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
@@ -325,7 +333,7 @@
 
             <div class="gallery-sec">
                 <h2 class="pd-1">Living Room </h2>
-                <div class="living-sec">
+                <div class="living-sec container">
                     <div class="row">
                         <div class="col-lg-8 img-sec"><img onclick="openModal();currentSlide(2)" src="living_1.jpg"
                                 alt=""></div>
@@ -339,7 +347,7 @@
             </div>
             <div class="gallery-sec">
                 <h2 class="pd-1">Bedroom </h2>
-                <div class="bedroom-sec">
+                <div class="bedroom-sec container">
                     <div class="row">
                         <div class="col-lg-4 img-sec"><img src="bedroom_1.jpg" alt=""
                                 onclick="openModal();currentSlide(3)">
@@ -352,7 +360,7 @@
             </div>
             <div class="gallery-sec">
                 <h2 class="pd-1">Bathroom </h2>
-                <div class="bathroom-sec">
+                <div class="bathroom-sec container">
                     <div class="row">
                         <div class="col-lg-8 img-sec"><img src="bathroom_1.jpg" alt=""
                                 onclick="openModal();currentSlide(4)"></div>
@@ -366,7 +374,7 @@
             </div>
             <div class="gallery-sec">
                 <h2 class="pd-1">Wardrobe </h2>
-                <div class="wardrobe-sec">
+                <div class="wardrobe-sec container">
                     <div class="row">
                         <div class="col-lg-4 img-sec"><img src="wardrobe_1.jpg" alt=""
                                 onclick="openModal();currentSlide(1)">
@@ -440,7 +448,7 @@
     </div>
 
 
-    <div class="seventh-section" id="contact">
+    <div class="seventh-section container" id="contact">
         <div class="back-img-sec">
 
 
@@ -454,7 +462,7 @@
                     <div class="row">
                         <div class="col-lg-6">
 
-                            <form>
+                            <form id="myForm">
                                 <div class="form-row">
                                     <div class="form-group col-lg-6">
                                         <label for="name">Your Name:</label>
@@ -505,15 +513,15 @@
                             <div class="row contact-row">
                                 <div class="col contact-details">
                                     <h4>Direct contact</h4>
-                                    <p>2972 WESTHEIMER RD. SANTA ANA, ILLINOIS 85486</p>
-                                    <p>(229) 555-0109</p>
-                                    <p>CONTACT@EXAMPLE.COM</p>
+                                    <p>SRI NANIUNDESWARA PLAZA KODATHI VILLAGE CARMALARAM POST BANGALORE- 560035</p>
+                                    <p>+91 82968 72323</p>
+                                    <p>sales@velvante.com</p>
                                     <button id="saveContact" class="secondary-btn">Save Contact</button>
 
                                 </div>
                                 <div class="col contact-details">
                                     <h4>ADMINISTRATIVE HOURS</h4>
-                                    <p>Monday to Friday, 9AM–5PM</p>
+                                    <p>Tuesday to Sunday, 10AM – 6PM</p>
 
                                     <p>Weekend Closed</p>
                                 </div>
@@ -531,7 +539,7 @@
         </div>
     </div>
     <footer class="bg-white p-5">
-        <div class="">
+        <div class="wrapper">
             <div class="row">
                 <!-- Logo on the left -->
                 <div class="col-12 col-lg-6">
@@ -544,7 +552,7 @@
                         <div class="col-lg-4 col-sm-6">
                             <h5>Social</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">Instagram</a></li>
+                                <li><a href="https://www.instagram.com/velvante.in/?igsh=MWR5NDhxZ21jcGI4Mg%3D%3D">Instagram</a></li>
                                 <li><a href="#">LinkedIn</a></li>
                                 <li><a href="#">Behance</a></li>
                                 <!-- Add more links as needed -->
@@ -553,8 +561,8 @@
                         <div class="col-lg-4 col-sm-6">
                             <h5>Info</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
                                 <!-- Add more links as needed -->
                             </ul>
                         </div>
@@ -566,7 +574,7 @@
 
 
                                 <li>
-                                    <p>+ 91 90080 32606</p>
+                                    <p>+91 82968 72323</p>
                                 </li>
                                 <li>
                                     <p>contact@velvante.com</p>

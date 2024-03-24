@@ -30,9 +30,7 @@
 
 
 
-        .nav-item a {
-            color: #fff !important;
-        }
+
 
         .about-fourth-section {
             padding-top: 6rem;
@@ -46,6 +44,7 @@
         .logo-conc-img img {
             width: 100%;
         }
+
         .logo-desc h4 {
             font-size: 3rem;
             font-weight: 200;
@@ -78,10 +77,7 @@
             z-index: 1;
         }
 
-        .text-overlay img {
-            max-width: 90%;
-            height: auto;
-        }
+
 
         .white-overlay {
             position: absolute;
@@ -103,13 +99,20 @@
         .partners-logos img {
             width: 100%;
             object-fit: contain;
-            height: 130px;
+            height: 95px;
+            padding: 20px;
         }
 
         .partners-logos {
-            background-color: #d1cbcb2d;
             padding-left: 20px;
             padding-right: 20px;
+        }
+
+        .partner-logo-div {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            background-color: #fff;
+
         }
 
         .about-first-section {
@@ -269,20 +272,113 @@
             margin-right: 0;
         }
 
-        .about-row {
-            margin-left: 0;
-            margin-right: 0;
-        }
 
-        .partners-logos {
+
+        /* .partners-logos {
             margin-left: 0;
             margin-right: 0;
-        }
+        } */
 
         .logo-conc-img {
             padding-top: 2rem;
         }
 
+        .partners-logos .col {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .content-sec {
+            align-items: center;
+            display: flex;
+        }
+
+        .cont-txt {
+            width: 80%;
+        }
+
+        .cont-txt p {
+            font-size: 13px;
+            line-height: 25px;
+            color: #888;
+            margin-bottom: 0;
+        }
+
+        .contact-details p {
+            line-height: normal;
+            margin-bottom: 1rem;
+            font-size: 12px;
+        }
+        .mission-icn {
+            background-image: url(mission-icn.svg);
+            width: 300px;
+            height: 300px;
+            background-size: 100%;
+        }
+
+        #vision-icn {
+            background-position-y: 300px;
+        }
+
+        .mis-icn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mission-bg {
+            background: url(mission2.jpg);
+            background-size: contain;
+            height: 75vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            padding-left: 30px;
+            justify-content: left;
+            align-items: center;
+            position: relative;
+        }
+
+        .vision-bg {
+            background: url(vision.jpg);
+            background-size: contain;
+            height: 75vh;
+            display: flex;
+            justify-content: end;
+            padding-right: 30px;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .mission-vision .col-md-6 {
+            padding: 0;
+        }
+
+        .vision-content {
+            background-color: #ffffffb7;
+            width: 450px;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        .vision-content p {
+            color: #444;
+        }
+
+        h3 {
+            font-weight: 100;
+            font-size: 2.5rem;
+        }
+
+        .heading-title {
+            text-align: center;
+        }
+
+        .partner-logo-2 {
+            padding-top: 1rem;
+        }
         @media only screen and (max-width: 992px) {
             .logo-desc h4 {
                 font-size: 1rem;
@@ -307,65 +403,39 @@
 
         }
 
-        .mission-icn {
-            background-image: url(mission-icn.svg);
-            width: 300px;
-            height: 300px;
-            background-size: 100%;
+        
+
+        @media screen and (max-width: 1200px) {
+            .col {
+                flex-basis: calc(33.33% - 10px);
+                /* Adjust width for 3 columns */
+            }
+
+            .partners-logos {
+                margin-top: 0;
+            }
         }
 
-        #vision-icn {
-            background-position-y: 300px;
-        }
-        .mis-icn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .mission-bg {
-            background: url(mission2.jpg);
-            background-size: contain;
-            height: 75vh;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            padding-left: 30px;
-            justify-content: left;
-            align-items: center;
-            position: relative;
-        }
-        .vision-bg {
-            background: url(vision.jpg);
-            background-size: contain;
-            height: 75vh;
-            display: flex;
-            justify-content: end;
-            padding-right: 30px;
-            align-items: center;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        .mission-vision .col-md-6 {
-            padding: 0;
-        }
-        .vision-content {
-            background-color: #ffffffb7;
-            width: 450px;
-            padding: 50px;
-            border-radius: 10px;
-        }
-        .vision-content p {
-            color: #444;
+        @media screen and (max-width: 768px) {
+            .col {
+                flex-basis: calc(50% - 10px);
+                /* Adjust width for 2 columns */
+            }
+
+            .partners-logos {
+                margin-top: 0;
+            }
         }
 
-        h3 {
-            font-weight: 100;
-            font-size: 2.5rem;
-        }
+        @media screen and (max-width: 576px) {
+            .col {
+                flex-basis: calc(50% - 10px);
+                /* Full width for 1 column */
+            }
 
-        .heading-title {
-            text-align: center;
+            .partners-logos {
+                margin-top: 0;
+            }
         }
     </style>
 </head>
@@ -378,9 +448,9 @@
         <!-- Navbar background -->
         <div class="navbar-background">
             <!-- Navbar using Bootstrap -->
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-light">
 
-
+                <a class="navbar-brand" href="index.html"> </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -406,10 +476,19 @@
     </div>
     <div class="about-second-section">
         <div class="video-container">
-            <video autoplay muted loop>
-                <source src="production_id_3770054 (1080p).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="desktop-view">
+                <video autoplay muted loop>
+                    <source src="production_id_3770054 (1080p).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="mobile-view">
+                <video autoplay muted loop>
+                    <source src="about.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
             <div class="white-overlay"></div>
             <div class="text-overlay">
                 <div class="logo-center">
@@ -421,7 +500,7 @@
             </div>
         </div>
     </div>
-    <div class="about-first-section">
+    <div class="about-first-section container">
         <div class="wrapper">
             <div class="row about-row">
                 <div class="col-md-6 content-sec">
@@ -453,50 +532,7 @@
         </div>
 
     </div>
-    <!-- <div class="mission-vision">
-        <div class="">
-            <div class="">
-                <div class="row" style="padding-top: 6rem;">
-                    <div class="col-md-6"
-                        style="text-align: end; background-color: #d1cbcb2d; color: #000;display: flex;">
-                        <div class="mis-icn">
-                            <div class="mission-icn"></div>
 
-                        </div>
-                        <div style="padding-top: 4rem; padding-bottom: 3rem;padding-right: 1rem;">
-                            <h2>Our Mission</h2>
-                            <div style="display: flex; justify-content: end;">
-                                <p style="width: 60%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Quisquam ipsam repudiandae aut inventore quo omnis possimus placeat molestiae
-                                    provident dolor eum iste, quae esse, rem et cum soluta voluptates! Doloremque.</p>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6" style="background-color: #c638382d; color: #ab6f6ffc; display: flex;">
-
-                        <div style="padding-top: 4rem; padding-bottom: 3rem;padding-left: 1rem;">
-
-                            <h2>Our Vision</h2>
-                            <div>
-                                <p style="width: 60%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Aperiam, recusandae! Natus modi debitis cum, rerum asperiores iure laudantium vitae
-                                    dolore hic laboriosam, inventore facere consectetur. Doloremque vitae illum facilis
-                                    voluptate!</p>
-
-                            </div>
-                        </div>
-                        <div class="mis-icn">
-                            <div class="mission-icn" id="vision-icn"></div>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div> -->
     <div class="mission-vision">
         <div class="row mission-row">
             <div class="col-md-6">
@@ -504,7 +540,8 @@
                     <div class="vision-content">
                         <h3>Vision</h3>
                         <p>
-                            To be the leading name in luxury interior design, inspiring spaces that resonate with grace and sophistication.
+                            To be the leading name in luxury interior design, inspiring spaces that resonate with grace
+                            and sophistication.
                         </p>
                     </div>
                 </div>
@@ -515,7 +552,8 @@
                         <h3>Mission</h3>
 
                         <p>
-                            To redifine interior elegance through exceptional design, sustainable practices, and unparelleled craftsmanship.
+                            To redifine interior elegance through exceptional design, sustainable practices, and
+                            unparelleled craftsmanship.
 
                         </p>
                     </div>
@@ -525,8 +563,8 @@
     </div>
 
 
-    
-    <div class="testimonial-section carousel slide" id="testimonialCarousel" data-ride="carousel">
+
+    <div class="testimonial-section container carousel slide" id="testimonialCarousel" data-ride="carousel">
         <div class="wrapper">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -630,7 +668,7 @@
             </a>
         </div>
     </div>
-    <div class="about-fourth-section">
+    <div class="about-fourth-section ">
         <div class="conc-head">
             <div class="heading-title">
                 <h2>Logo <span class="big-txt">Concepts</span></h2>
@@ -646,33 +684,54 @@
 
 
     </div>
-    <div class="partners-section">
+    <div class="partners-section ">
         <div class="partner-head">
             <h2>Our <span class="big-txt">Partners</span></h2>
         </div>
-        <div class="row partners-logos">
-            <div class="col">
-                <img src="hettich.png" alt="">
+        <div class="partner-logo-div container">
+            <div class="row partners-logos">
+                <div class="col">
+                    <img src="hettich.jpg" alt="">
+                </div>
+                <div class="col">
+                    <img src="green.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="kridha.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="rehau.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="century.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="greenlam.png" alt="">
+                </div>
             </div>
-            <div class="col">
-                <img src="hettich.png" alt="">
-            </div>
-            <div class="col">
-                <img src="hettich.png" alt="">
-            </div>
-            <div class="col">
-                <img src="hettich.png" alt="">
-            </div>
-            <div class="col">
-                <img src="hettich.png" alt="">
-            </div>
-            <div class="col">
-                <img src="hettich.png" alt="">
+            <div class="row partners-logos partner-logo-2">
+                <div class="col">
+                    <img src="hafele.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="cnr.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="merino.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="virgo.png" alt="">
+                </div>
+                <div class="col">
+                    <img src="ebco.png" alt="">
+                </div>
+
             </div>
         </div>
 
+
     </div>
-    <div class="seventh-section" id="contact">
+    <div class="seventh-section container" id="contact">
         <div class="back-img-sec">
 
 
@@ -720,37 +779,26 @@
                             </form>
                         </div>
                         <div class="col-lg-6 address-sec">
-                            <!-- <div class="contact-ic">
-                                <img src="icons8-call-50.png" alt="">
-                                <p>Call us: (229) 555-0109</p>
-                            </div>
-                            <div class="contact-ic">
-                                <img src="icons8-email-50.png" alt="">
-                                <p>Email Us: contact@example.com</p>
+                            <div class="">
+                                <div class="row contact-row">
+                                    <div class="col contact-details">
+                                        <h4>Direct contact</h4>
+                                        <p>SRI NANIUNDESWARA PLAZA KODATHI VILLAGE CARMALARAM POST BANGALORE- 560035</p>
+                                        <p>+91 82968 72323</p>
+                                        <p>sales@velvante.com</p>
+                                        <button id="saveContact" class="secondary-btn">Save Contact</button>
 
-                            </div>
-                            <div class="contact-ic">
-                                <img src="office-building (1).png">
-                                <p>Find us: 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                                    </div>
+                                    <div class="col contact-details">
+                                        <h4>ADMINISTRATIVE HOURS</h4>
+                                        <p>Tuesday to Sunday, 10AM – 6PM</p>
 
-                            </div> -->
-                            <div class="row contact-row">
-                                <div class="col contact-details">
-                                    <h4>Direct contact</h4>
-                                    <p>2972 WESTHEIMER RD. SANTA ANA, ILLINOIS 85486</p>
-                                    <p>(229) 555-0109</p>
-                                    <p>CONTACT@EXAMPLE.COM</p>
-                                    <button id="saveContact" class="secondary-btn">Save Contact</button>
+                                        <p>Weekend Closed</p>
+                                    </div>
 
                                 </div>
-                                <div class="col contact-details">
-                                    <h4>ADMINISTRATIVE HOURS</h4>
-                                    <p>Monday to Friday, 9AM–5PM</p>
-
-                                    <p>Weekend Closed</p>
-                                </div>
-
                             </div>
+
                         </div>
 
 
@@ -763,7 +811,7 @@
         </div>
     </div>
     <footer class="bg-white p-5">
-        <div class="">
+        <div class="wrapper">
             <div class="row">
                 <!-- Logo on the left -->
                 <div class="col-12 col-lg-6">
@@ -776,7 +824,9 @@
                         <div class="col-lg-4 col-sm-6">
                             <h5>Social</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">Instagram</a></li>
+                                <li><a
+                                        href="https://www.instagram.com/velvante.in/?igsh=MWR5NDhxZ21jcGI4Mg%3D%3D">Instagram</a>
+                                </li>
                                 <li><a href="#">LinkedIn</a></li>
                                 <li><a href="#">Behance</a></li>
                                 <!-- Add more links as needed -->
@@ -785,8 +835,8 @@
                         <div class="col-lg-4 col-sm-6">
                             <h5>Info</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
                                 <!-- Add more links as needed -->
                             </ul>
                         </div>
@@ -798,7 +848,7 @@
 
 
                                 <li>
-                                    <p>+ 91 90080 32606</p>
+                                    <p>+91 82968 72323</p>
                                 </li>
                                 <li>
                                     <p>contact@velvante.com</p>

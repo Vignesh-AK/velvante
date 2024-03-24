@@ -24,54 +24,14 @@
 <body>
     <div class="static-button" onclick="scrollToNavbar()"><i class="fa-solid fa-angle-up"></i></div>
 
-    <!-- <div id="navbar" class="navbar-content-wrapper">
-        <div class="navbar-background">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-
-                <a class="navbar-brand" href="index.html"><img src="velvante.svg" alt="velvante"> </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <div class="main-content-test">
-       
-        <div class="wrapper">
-            <div class="heading-content-test"
-                style="color: white; top: 50%;position: absolute; background-color: rgba(0, 0, 0, 0.209); padding: 10px;">
-                <h1 class="heading-main-test">DESIGN & <br>
-                    CRAFTED <br>
-                    INTERIORS</h1>
-                <p>Redefining Indian Living</p>
-            </div>
-        </div>
-
-    </div> -->
+   
     <div id="navbar" class="">
         <!-- Navbar background -->
         <div class="navbar-background">
             <!-- Navbar using Bootstrap -->
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg navbar-light">
 
+                <a class="navbar-brand" href="index.html"> </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -98,10 +58,18 @@
     </div>
     <div class="about-second-section">
         <div class="video-container">
-            <video autoplay muted loop>
-                <source src="production_id_3770054 (1080p).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="desktop-view">
+                <video autoplay muted loop>
+                    <source src="interior.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="mobile-view">
+                <video autoplay muted loop>
+                    <source src="interior-mobile.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
             <div class="white-overlay"></div>
             <div class="text-overlay">
                 <div class="logo-center">
@@ -109,12 +77,12 @@
                     <div class="logo-desc">
                         <h4>Crafting Elegance</h4>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="second-section">
+    <div class="second-section container">
         <div class="wrapper">
             <div class="row">
                 <div class="col-lg-5 dream-div">
@@ -140,115 +108,119 @@
     <div class="third-section">
         <div class="third-bg-img">
             <div class="wrapper">
-                <div class="row process-row">
-                    <div class="col-lg-6 ic-row">
-                        <div class="grid-container">
+                <div class="container">
 
-                            <div class="grid-item">
-                                <div>
-                                    <span id="icons-01" class="flow-icons">
-                                    </span>
+
+                    <div class="row process-row">
+                        <div class="col-lg-6 ic-row">
+                            <div class="grid-container">
+
+                                <div class="grid-item">
+                                    <div>
+                                        <span id="icons-01" class="flow-icons">
+                                        </span>
+                                    </div>
+
+                                    <div class="steps-sec">
+                                        <div>
+                                            <h6>CREATION</h6>
+                                            <p class="steps-desc">Breathing life into interior design
+
+                                            </p>
+                                        </div>
+
+
+                                    </div>
                                 </div>
 
-                                <div class="steps-sec">
+                                <div class="grid-item">
                                     <div>
-                                        <h6>CREATION</h6>
-                                        <p class="steps-desc">Breathing life into interior design
+                                        <span id="icons-02" class="flow-icons">
+                                        </span>
+                                    </div>
 
+                                    <div class="steps-sec">
+                                        <div>
+                                            <h6>DISCOVERY</h6>
+                                            <p class="steps-desc">Selecting materials and accessories
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+                                <div class="grid-item">
+                                    <div>
+                                        <span id="icons-03" class="flow-icons">
+
+                                        </span>
+                                    </div>
+
+                                    <div class="steps-sec">
+                                        <div>
+                                            <h6>VISUALIZATION</h6>
+                                            <p class="steps-desc">Creating lifelike 3D models </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div>
+                                        <span id="icons-04" class="flow-icons">
+
+                                        </span>
+                                    </div>
+
+                                    <div class="steps-sec">
+
+                                        <h6>BLUEPRINT
+
+                                        </h6>
+                                        <p class="steps-desc">Crafting precise technical plans
                                         </p>
                                     </div>
-
-
                                 </div>
-                            </div>
-
-                            <div class="grid-item">
-                                <div>
-                                    <span id="icons-02" class="flow-icons">
-                                    </span>
-                                </div>
-
-                                <div class="steps-sec">
+                                <div class="grid-item">
                                     <div>
-                                        <h6>DISCOVERY</h6>
-                                        <p class="steps-desc">Selecting materials and accessories
-                                        </p>
+                                        <span id="icons-05" class="flow-icons">
+
+                                        </span>
                                     </div>
 
-
-                                </div>
-                            </div>
-
-
-                            <div class="grid-item">
-                                <div>
-                                    <span id="icons-03" class="flow-icons">
-
-                                    </span>
-                                </div>
-
-                                <div class="steps-sec">
-                                    <div>
-                                        <h6>VISUALIZATION</h6>
-                                        <p class="steps-desc">Creating lifelike 3D models </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <span id="icons-04" class="flow-icons">
-
-                                    </span>
-                                </div>
-
-                                <div class="steps-sec">
-
-                                    <h6>BLUEPRINT
-
-                                    </h6>
-                                    <p class="steps-desc">Crafting precise technical plans
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <span id="icons-05" class="flow-icons">
-
-                                    </span>
-                                </div>
-
-                                <div class="steps-sec">
-                                    <div>
-                                        <h6>EXECUTION</h6>
-                                        <p class="steps-desc">Guiding specialized labor with finesse </p>
-                                    </div>
+                                    <div class="steps-sec">
+                                        <div>
+                                            <h6>EXECUTION</h6>
+                                            <p class="steps-desc">Guiding specialized labor with finesse </p>
+                                        </div>
 
 
-
-                                </div>
-                            </div>
-                            <div class="grid-item">
-                                <div>
-                                    <span id="icons-06" class="flow-icons">
-
-                                    </span>
-                                </div>
-
-                                <div class="steps-sec">
-                                    <div>
-                                        <h6>SYNTHESIS</h6>
-
-                                        <p class="steps-desc">Overseeing construction nuance</p>
 
                                     </div>
+                                </div>
+                                <div class="grid-item">
+                                    <div>
+                                        <span id="icons-06" class="flow-icons">
 
+                                        </span>
+                                    </div>
+
+                                    <div class="steps-sec">
+                                        <div>
+                                            <h6>SYNTHESIS</h6>
+
+                                            <p class="steps-desc">Overseeing construction nuance</p>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
+                        <div class="col-lg-6">
 
+                        </div>
                     </div>
                 </div>
 
@@ -407,11 +379,11 @@
             </div>
         </div>
     </div> -->
-    <div class="fourth-section">
+    <div class="fourth-section container">
         <div class="wrapper">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="frame-mockup-luxury-dining-room-cream-color-background_41470-5110.jpg" alt="">
+                    <img src="happy.jpeg" alt="">
 
                 </div>
                 <div class="col-lg-6 dream-cont">
@@ -442,7 +414,7 @@
             </video>
         </div>
     </div>
-    <div class="sixth-section">
+    <div class="sixth-section container">
         <div class="wrapper">
             <div class="text-div">
                 <h2 class="pd-1 ">The <span class="big-txt">Style</span> We <span class="big-txt"> Follows </span></h2>
@@ -598,7 +570,7 @@
 
     </div>
 
-    <div class="seventh-section" id="contact">
+    <div class="seventh-section container" id="contact">
         <div class="back-img-sec">
 
 
@@ -606,7 +578,7 @@
                 <div class="contact-us">
                     <div class="cont-head">
                         <h2>Reach <span class="big-txt">Us</span></h2>
-                        <p class="caution">Your email address will not be published.</p>
+                        <p class="caution">Your email address will not be published. Required fields are marked *</p>
                     </div>
 
                     <div class="row">
@@ -638,33 +610,20 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputAddress">Message</label>
-                                    <textarea type="text" class="form-control" id="inputAddress" placeholder=""></textarea>
+                                    <label for="inputAddress">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="">
                                 </div>
 
                                 <button type="submit" class="secondary-btn">Submit</button>
                             </form>
                         </div>
                         <div class="col-lg-6 address-sec">
-                            <!-- <div class="contact-ic">
-                                <img src="icons8-call-50.png" alt="">
-                                <p>Call us: (229) 555-0109</p>
-                            </div>
-                            <div class="contact-ic">
-                                <img src="icons8-email-50.png" alt="">
-                                <p>Email Us: contact@example.com</p>
-
-                            </div>
-                            <div class="contact-ic">
-                                <img src="office-building (1).png">
-                                <p>Find us: 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-
-                            </div> -->
+                            
                             <div class="row contact-row">
                                 <div class="col contact-details">
                                     <h4>Direct contact</h4>
                                     <p>SRI NANIUNDESWARA PLAZA KODATHI VILLAGE CARMALARAM POST BANGALORE- 560035</p>
-                                    <p>+ 91 90080 32606</p>
+                                    <p>+91 82968 72323</p>
                                     <p>sales@velvante.com</p>
                                     <button id="saveContact" class="secondary-btn">Save Contact</button>
 
@@ -689,7 +648,7 @@
         </div>
     </div>
     <footer class="bg-white p-5">
-        <div class="">
+        <div class="wrapper">
             <div class="row">
                 <!-- Logo on the left -->
                 <div class="col-12 col-lg-6">
@@ -702,7 +661,7 @@
                         <div class="col-lg-4 col-sm-6">
                             <h5>Social</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">Instagram</a></li>
+                                <li><a href="https://www.instagram.com/velvante.in/?igsh=MWR5NDhxZ21jcGI4Mg%3D%3D">Instagram</a></li>
                                 <li><a href="#">LinkedIn</a></li>
                                 <li><a href="#">Behance</a></li>
                                 <!-- Add more links as needed -->
@@ -711,8 +670,8 @@
                         <div class="col-lg-4 col-sm-6">
                             <h5>Info</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Services</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="gallery.html">Galler</a></li>
                                 <!-- Add more links as needed -->
                             </ul>
                         </div>
@@ -724,7 +683,7 @@
 
 
                                 <li>
-                                    <p>+ 91 90080 32606</p>
+                                    <p>+91 82968 72323</p>
                                 </li>
                                 <li>
                                     <p>sales@velvante.com</p>
@@ -739,33 +698,33 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-document.getElementById("myForm").addEventListener("submit", function(event) {
-        event.preventDefault(); // Prevent the default form submission
-        
-        // Collect form data
-        var formData = new FormData(this);
-        
-        // Send form data using AJAX
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "send_mail.php", true); // Replace with the correct path to your PHP file
-        xhr.onload = function() {
-            if (xhr.status === 200) {
-                // Handle success response
-                alert(xhr.responseText); // Alert the response from the server
-            } else {
-                // Handle error response
-                alert("Failed to send email. Please try again later.");
-            }
-        };
-        xhr.onerror = function() {
-            // Handle network error
-            alert("Network error occurred. Please try again later.");
-        };
-        xhr.send(formData); // Send form data
-    });
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Collect form data
+            var formData = new FormData(this);
+
+            // Send form data using AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "send_mail.php", true); // Replace with the correct path to your PHP file
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // Handle success response
+                    alert(xhr.responseText); // Alert the response from the server
+                } else {
+                    // Handle error response
+                    alert("Failed to send email. Please try again later.");
+                }
+            };
+            xhr.onerror = function () {
+                // Handle network error
+                alert("Network error occurred. Please try again later.");
+            };
+            xhr.send(formData); // Send form data
+        });
     </script>
-    
-    
+
+
     <script src="index.js"></script>
 
 </body>
