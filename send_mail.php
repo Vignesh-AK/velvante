@@ -4,20 +4,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
-
+    $budget = $_POST["budget"];
     // Email configuration
     $to = "vchoo10@gmail.com"; // Replace with recipient's email address
     $subject = "Message from your website";
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $body = "Name: $name\nEmail: $email\nMessage: $message\Budget: $budget";
     $headers = "From: vigneshayanikodan@gmail.com"; // Replace with your email address
 
     // Send email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Email sent successfully!";
+        header("Location: " . $_SERVER["HTTP_REFERER"]);
+        exit;
     } else {
-        echo "Failed to send email to vignesh. Please try again later.";
+        header("Location: " . $_SERVER["HTTP_REFERER"]);
+        exit;
     }
 } else {
-    echo "Error: This script should be accessed via POST method.";
+    header("Location: " . $_SERVER["HTTP_REFERER"]);
+    exit;
 }
 ?>
